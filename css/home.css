@@ -1,0 +1,318 @@
+.author_panel {
+    background-color: white;
+    width: 1280px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 10pt;
+    border: 2px solid ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.author {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.author img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50pt;
+}
+
+.author_info {
+    margin: auto 20px;
+}
+
+.nav {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.nav hr {
+    opacity: 25%;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #424242;
+    margin-left: 50%;
+    width: 0;
+    transition: all 0.5s;
+}
+
+.nav ul li:hover::after {
+    margin-left: 0;
+    width: 100%;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    line-height: 18px;
+    padding: 15px 20px;
+}
+
+.container {
+    width: 1280px;
+    margin: 15px auto;
+}
+
+.container li {
+    font-weight: bold;
+    line-height: 2.4;
+    font-size: 1.17em;
+}
+
+.container .container_panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.container .follow_panel {
+    width: 672px;
+    height: 350px;
+    background-color: rgba(144, 202, 249, 0.2);
+    margin-right: 20px;
+    border-radius: 10pt;
+}
+
+.container .descriptor_panel {
+    width: 1248px;
+    height: 350px;
+    background-color: rgba(165, 214, 167, 0.2);
+    margin-left: 20px;
+    border-radius: 10pt;
+}
+
+.container .project_panel {
+    width: 1056px;
+    height: 300px;
+    background-color: rgba(255, 204, 188, 0.2);
+    margin-right: 20px;
+    border-radius: 10pt;
+}
+
+.container .contact_panel {
+    width: 864px;
+    height: 300px;
+    background-color: rgba(255, 249, 196, 0.2);
+    margin-left: 20px;
+    border-radius: 10pt;
+}
+
+.end_panel {
+    width: 1280px;
+    height: 80px;
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 10pt;
+    border: whitesmoke solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow_info {
+    margin: 40px;
+}
+
+.follow_info h2 {
+    color: #006064;
+    display: inline-block;
+}
+
+.follow_info ul li {
+    padding: 10px;
+    transition: background-color 0.2s;
+    list-style: none;
+    border-radius: 10pt;
+    position: relative;
+}
+
+.follow_info ul li a {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+}
+
+.follow_info ul li a b {
+    margin-left: 15px;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.follow_info ul li:hover {
+    background-color: rgba(41, 182, 246, 0.2);
+}
+
+.descriptor_info {
+    margin: 40px;
+}
+
+.descriptor_info h2 {
+    color: #006064;
+    display: inline-block;
+}
+
+.descriptor_info h3 {
+    line-height: 2.4;
+}
+
+.descriptor_info ul * {
+    /*white-space: nowrap;*/
+}
+
+.descriptor_info ul li {
+    list-style: inside;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border-radius: 10pt;
+    padding-left: 20px;
+}
+
+.descriptor_info ul li h3 {
+    /*display: block;*/
+}
+
+.descriptor_info ul li:hover {
+    background-color: rgba(102, 187, 106, 0.2);
+}
+
+.project_info {
+    margin: 40px;
+}
+
+.project_info h2 {
+    color: #006064;
+    display: inline-block;
+}
+
+.project_info * {
+    line-height: 2.4;
+}
+
+.project_info ul {
+    margin-top: 30px;
+}
+
+.project_info ul li {
+    list-style: "☞" inside;
+    border-radius: 10pt;
+    padding-left: 20px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.project_info ul li a {
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.project_info ul li:hover {
+    background-color: rgba(255, 138, 101, 0.2);
+}
+
+.contact_info {
+    margin: 40px;
+}
+
+.contact_info h2 {
+    color: #006064;
+    display: inline-block;
+}
+
+.contact_info * {
+    line-height: 2.4;
+}
+
+.contact_info ul li {
+    list-style: inside;
+    border-radius: 10pt;
+    padding-left: 20px;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.contact_info ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.contact_info ul li:hover {
+    background-color: rgba(255, 138, 101, 0.2);
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    .author_panel {
+        background-color: white;
+        width: 100vw;
+        height: 300px;
+        margin: 0;
+    }
+
+    .container {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .container .container_panel {
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    .container .follow_panel {
+        width: 85vw;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .container .descriptor_panel {
+        width: 85vw;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .container .project_panel {
+        width: 85vw;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .container .contact_panel {
+        width: 85vw;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .end_panel {
+        width: 85vw;
+        height: 80px;
+        margin: 10px auto;
+    }
+
+}
