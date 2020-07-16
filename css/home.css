@@ -30,6 +30,10 @@
     margin: auto 20px;
 }
 
+.author_panel h2 {
+    color: #BDBDBD;
+}
+
 .nav {
     position: relative;
     bottom: 0;
@@ -118,19 +122,6 @@
     background-color: rgba(255, 249, 196, 0.2);
     margin-left: 20px;
     border-radius: 10pt;
-}
-
-.end_panel {
-    width: 1280px;
-    height: 80px;
-    margin: 15px auto;
-    background-color: white;
-    border-radius: 10pt;
-    border: whitesmoke solid 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .follow_info {
@@ -265,6 +256,23 @@
     background-color: rgba(255, 138, 101, 0.2);
 }
 
+.end_panel {
+    width: 1280px;
+    height: 80px;
+    margin: 15px auto 25px;
+    background-color: white;
+    border-radius: 10pt;
+    border: whitesmoke solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.end_panel h3 {
+    user-select:none;
+    font-size: 1em;
+}
 
 @media screen and (max-width: 1280px) {
 
