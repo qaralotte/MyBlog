@@ -3,6 +3,16 @@
     src: url("../ttf/Noto Serif SC.otf");
 }
 
+@font-face {
+    font-family: "JetBrains Mono Bold";
+    src: url("../ttf/JetBrainsMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Light";
+    src: url("../ttf/JetBrainsMono-Light.ttf");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,13 +23,16 @@
     margin-block-end: 0;
 }
 
+b, strong {
+    font-family: "JetBrains Mono Bold", sans-serif;
+}
+
 h1, a {
     color: #424242;
 }
 
 a {
     display: block;
-    font-weight: bold;
 }
 
 h3, h4, h5, h6, p, li, b {
