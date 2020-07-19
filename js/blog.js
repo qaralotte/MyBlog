@@ -1,7 +1,15 @@
+
 /*
- *   顶部判断
+ * 屏蔽错误
  */
-window.addEventListener("scroll", function () {
+window.onerror = () => {
+    return true;
+}
+
+/*
+ * 顶部判断
+ */
+window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop !== 0) {
         document.getElementById("header_top").id = 'header_scroll';
         document.getElementById("title_top").id = 'title_scroll';
@@ -16,14 +24,17 @@ window.addEventListener("scroll", function () {
 }, false);
 
 /*
- *    返回顶部按钮
+ * 返回顶部按钮
  */
 function goTop() {
-    (function smoothscroll() {
-        const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        if (currentScroll > 0) {
-            window.requestAnimationFrame(smoothscroll);
+    let distance = document.documentElement.scrollTop || document.body.scrollTop;
+    function smoothscroll() {
+        let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (distance > 0 && currentScroll !== 0) {
+            distance -= currentScroll / 5;
+            window.requestAnimationFrame(smoothscroll)
             window.scrollTo(0, currentScroll - (currentScroll / 5));
         }
-    })();
+    }
+    window.requestAnimationFrame(smoothscroll);
 }

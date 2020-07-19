@@ -158,6 +158,8 @@ section #main_nav {
 
 #main_nav .index_list li p {
     display: inline-block;
+    /*width: auto;*/
+    height: 36px;
     line-height: 2.4;
     margin-top: 2px;
     color: #777777;
@@ -201,6 +203,26 @@ section #main_nav {
     vertical-align: middle;
 }
 
+#main_nav .index_list .h3 {
+    padding-left: 50px;
+}
+
+#main_nav .index_list .h3:hover {
+    padding-left: 53px;
+}
+
+#main_nav .index_list .h3::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 1pt;
+    border-top: 3px solid #777777;
+    border-right: 3px solid #777777;
+    transform: rotate(45deg);
+    display: inline-block;
+    vertical-align: middle;
+}
+
 section .post_bg {
     width: 660px;
     margin: 60px auto;
@@ -240,7 +262,7 @@ section .main {
 
 section .main * {
     margin: 15px auto;
-    line-height: 1.6;
+    line-height: 2.0;
     word-wrap:break-word;
     word-break:normal;
 }
