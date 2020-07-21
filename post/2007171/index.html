@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <title>汐鹿生 - 我永远喜欢小宫惠娜!</title>
     <link rel="stylesheet" type="text/css" href="../../css/global.css">
     <link rel="stylesheet" type="text/css" href="../../css/post.css">
@@ -10,17 +11,16 @@
     <script rel="script" src="../../js/post.js"></script>
 </head>
 <body>
-    <script src="../../js/particle.js"></script>
     <script src="../../js/loading.js"></script>
     <header id="header_top">
         <div id="progress"></div>
         <img class="portrait" alt="" src="../../img/portrait.jpg">
-        <h2 class="title" id="title_top">- 文章列表 -</h2>
+        <h2 class="title" id="title_top"></h2>
         <ul class="nav">
             <li><a href="../../index.html">首页</a></li>
             <li><a href="#">归档</a></li>
             <li><a href="#">留言板</a></li>
-            <li><a href="#">关于我</a></li>
+            <li><a href="#">关于我</a></li>0-
         </ul>
     </header>
     <section>
@@ -32,22 +32,22 @@
                 </div>
                 <div class="line"></div>
                 <ul class="index_list">
-                    <li class="h1" onclick="goAnchor('meet')"><p>遇见</p></li>
-                    <li class="h1" onclick="goAnchor('company')"><p>陪伴</p></li>
-                    <li class="h1" onclick="goAnchor('confession')"><p>告白</p></li>
+                    <li onclick="goAnchor('meet')"><p class="h1">遇见</p></li>
+                    <li onclick="goAnchor('company')"><p class="h1">陪伴</p></li>
+                    <li onclick="goAnchor('confession')"><p class="h1">告白</p></li>
                 </ul>
             </div>
             <div class="title">
                 <ul class="tag_list">
-                    <li class="tag" style="background-color: rgba(76, 175, 80, 0.1);"><b class="lab" style="color: #4CAF50;">测试</b></li>
-                    <li class="tag" style="background-color: rgba(158, 158, 158, 0.1);"><p style="color: #9E9E9E;">测试</p></li>
+                    <li class="tag" style="background-color: rgba(255, 152, 0, 0.1);"><b style="color: #FF9800;">日常</b></li>
+                    <li class="tag" style="background-color: rgba(158, 158, 158, 0.1);"><p style="color: #9E9E9E;">动漫</p></li>
                 </ul>
                 <h1>我永远喜欢小宫惠娜!</h1>
-                <p>2020-07-17</p>
+                <p class="date">2020-07-17</p>
             </div>
             <div class="line"></div>
             <div class="main">
-                <img id="meet" alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_1.jpg">
+                <img class="anchor" id="meet" alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_1.jpg">
                 <h3>————"我要是大赛拿奖了，就向前辈告白"</h3>
                 <img alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_2.jpg">
                 <b>一个坚持自己梦想的少女</b>
@@ -57,7 +57,7 @@
                 <p>最初，她缠上瑛太的理由很简单，就是为了能使用他的照片拿去参赛</p>
                 <p>但随着联系的慢慢变多，小宫也发觉到了自己的感情</p>
                 <img alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_4.jpg">
-                <h3 id="company">————"事先说明，这不是巧合，是我在等你"</h3>
+                <h3 class="anchor" id="company">————"事先说明，这不是巧合，是我在等你"</h3>
                 <img alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_5.jpg">
                 <img alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_6.jpg">
                 <img alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_7.jpg">
@@ -72,7 +72,7 @@
                 <img alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_10.jpg">
                 <p>想必，接受事实对于小宫而言，也是十分残酷的吧</p>
                 <br>
-                <b id="confession">然而，故事总有一个结局</b>
+                <b class="anchor" id="confession">然而，故事总有一个结局</b>
                 <p>即使照片并没有拿奖，但小宫并没有就此罢休</p>
                 <p>于是在毕业的那一天，小宫向瑛太<b>认真</b>的告白了</p>
                 <img alt="" src="https://xi-lu-sheng.oss-cn-hangzhou.aliyuncs.com/post/2007171/komiya_11.jpg">
@@ -98,5 +98,6 @@
     <footer>
         <p class="copyright">&copy;Copyright 2020 · qaralotte · 浙ICP备20026174号</p>
     </footer>
+    <script src="../../js/particle.js"></script>
 </body>
 </html>

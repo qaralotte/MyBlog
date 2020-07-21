@@ -19,11 +19,13 @@ document.body.style.overflowY = 'hidden';
  * 加载完毕
  */
 window.onload = function () {
-    window.requestAnimationFrame(() => {
-        document.getElementById('pre_loading').style.opacity = "0";
-    })
-    document.body.style.overflowY = 'auto';
     setTimeout(() => {
-        document.getElementById('pre_loading').style.display = "none";
-    }, 200);
+        window.requestAnimationFrame(() => {
+            document.getElementById('pre_loading').style.opacity = "0";
+        })
+        document.body.style.overflowY = 'auto';
+        setTimeout(() => {
+            document.getElementById('pre_loading').style.display = "none";
+        }, 200);
+    }, 1000);
 }

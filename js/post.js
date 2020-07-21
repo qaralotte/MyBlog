@@ -30,3 +30,26 @@ function goAnchor(anchor) {
     }
     window.requestAnimationFrame(smoothscroll);
 }
+
+/*
+ * 锚点记录
+ */
+window.addEventListener("scroll", () => {
+    let anchors = document.getElementsByClassName('main')[0].getElementsByClassName('anchor');
+    let anchor_navs = document.getElementsByClassName('index_list')[0].getElementsByTagName('li');
+    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    for (let i = 0; i < anchors.length - 1; ++i) {
+        let first_anchor = anchors[i];
+        let second_anchor = anchors[i + 1];
+        if (currentScroll + 2 >= first_anchor.offsetTop - 80 && currentScroll + 2 < second_anchor.offsetTop - 80) {
+            anchor_navs[i].className = 'li_action';
+        } else {
+            anchor_navs[i].className = '';
+        }
+    }
+    if (currentScroll + 2 >= anchors[anchors.length - 1].offsetTop - 80) {
+        anchor_navs[anchor_navs.length - 1].className = 'li_action';
+    } else {
+        anchor_navs[anchor_navs.length - 1].className = '';
+    }
+})
