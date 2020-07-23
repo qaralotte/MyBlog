@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#universe {
+    position: relative;
+    width: 100vw;
+}
+
+#universe section {
+    width: 100%;
+    margin: 20px auto;
+}
+
+#world {
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    background-color: #424242;
+    font-size: 0;
+    border: 2px solid #212121;
+}
+
+#world .cell {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    background-color: #424242;
+    display: inline-block;
+    letter-spacing: 0;
+    transition: all 0.2s;
+}
+
+#world .cell.alive {
+    background-color: yellow;
+}
+
+#world .cell:hover {
+    border: 2px solid #212121;
+}
+
+#menu {
+    position: absolute;
+    width: calc((100% - 800px) / 2);
+    height: 100%;
+}
+
+#menu #tips_img {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin: 20px;
+}
+
+#menu #tips {
+    width: 650px;
+    height: auto;
+    float: right;
+    clear: both;
+    line-height: 1.8;
+    background-color: rgba(33, 33, 33, 0.85);
+    margin-right: -450px;
+    padding: 20px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#menu #tips * {
+    color: white;
+}
+
+#setting {
+    position: absolute;
+    right: 0;
+    width: calc((100% - 800px) / 2);
+    height: 100%;
+}
+
+#setting #status {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#setting #status #light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #F44336;
+    transition: background-color 0.2s;
+}
+
+#setting #status #status_text {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#setting #num {
+    margin-left: 20px;
+}
+
+#setting #help_text {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+#setting #help_text #start_text {
+    color: #FF9800;
+}
+
+#setting #help_text #init_text {
+    color: #E91E63;
+}

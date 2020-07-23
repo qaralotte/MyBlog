@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="stylesheet" href="../../css/loading.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script rel="script" src="../../js/loading.js"></script>
+    <div id="universe">
+        <div id="menu">
+            <img id="tips_img" alt="" src="img/tip.svg">
+            <div id="tips">
+                <h3>Game of Life</h3>
+                <br>
+                <p>生命游戏是以基于细胞进行模拟，每个细胞周围最多有8个细胞，每个细胞有只有两种状态(活、死)，游戏规则如下：</p>
+                <ul style="list-style: inside">
+                    <li>每个活着的细胞当其周围活着的细胞数量少于2时,变为死亡状态，理解为人口稀少</li>
+                    <li>每个活着的细胞当其周围活着的细胞数量大于3时, 变为死亡状态，理解为过度拥挤</li>
+                    <li>每个活着的细胞当其周围活着的细胞数量为2或者3时，继续存活</li>
+                    <li>每个状态为死的细胞当其周围有3个活着的细胞时，变为活着的状态，其它时候不变</li>
+                </ul>
+            </div>
+        </div>
+        <div id="setting">
+            <div id="status">
+                <div id="light"></div>
+                <h2 id="status_text">Stopping</h2>
+            </div>
+            <br>
+            <h3 id="num">Number of progeny: 0</h3>
+            <div id="help_text">
+                <h2 id="init_text">Press「SPACE」to clear</h2>
+                <h2 id="start_text">Press「ENTER」to start</h2>
+            </div>
+        </div>
+        <section>
+            <div id="world">
+                <!-- script.js -->
+            </div>
+        </section>
+        <script rel="script" src="js/script.js"></script>
+    </div>
+</body>
+</html>
